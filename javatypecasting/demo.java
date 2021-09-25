@@ -1,14 +1,16 @@
- class p{
+class P{
     public void show(){
-         System.out.println("parent class-method show");
+      System.out.println("parent-class method show");
     }
-    class c extends p{
-        public void show(){
-         System.out.println("child class-method show");   
-        }
+}
+class C extends P{
+    public void show(){
+      System.out.println("child-class method show");    
     }
-    public static void main(String[] k){
+}
+class demo{
+    public static void main(String[] args){
         P p1 = new C();
         p1.show();
     }
- }  
+}
